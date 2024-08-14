@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Best JavaScript Framework - Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Best JavaScript Framework</h1>
+      <p id="description">
+        Help the community find the best JavaScript framework!
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label
+            id="name-label"
+            class="form-label"
+            for="name"
+            >Name</label
+          ><input
+            id="name"
+            class="form-control"
+            name="name"
+            type="text"
+            required
+            placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <label
+            id="email-label"
+            class="form-label"
+            for="email">
+            Email</label
+          ><input
+            id="email"
+            class="form-control"
+            name="email"
+            type="email"
+            required
+            placeholder="Enter your Email" />
+        </div>
+        <div class="form-group">
+          <label
+            id="number-label"
+            class="form-label"
+            for="number">
+            Age (optional)</label
+          ><input
+            id="number"
+            class="form-control"
+            name="age"
+            type="number"
+            min="10"
+            max="99"
+            placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <label
+            for="dropdown"
+            class="form-label"
+            >Which option best describes your current role?</label
+          >
+          <div class="select">
+            <select
+              id="dropdown"
+              class="form-control"
+              name="role"
+              required>
+              <option
+                value=""
+                selected
+                disabled>
+                Select current role
+              </option>
+              <option value="student">Student</option>
+              <option value="front-end-developer">Front-end developer</option>
+              <option value="back-end-developer">Back-end developer</option>
+              <option value="business-analyst">Business Analyst</option>
+              <option value="tester">Tester</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Which JavaScript framework do you like to work with the most?</p>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="user-recommend"
+              value="angular"
+              required />
+            <label class="form-check-label">Angular</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="user-recommend"
+              value="react" />
+            <label class="form-check-label">React</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="user-recommend"
+              value="vue" />
+            <label class="form-check-label">Vue</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label
+            for="explanation"
+            class="form-label"
+            >Why?</label
+          >
+          <textarea
+            id="explanation"
+            class="form-control"
+            rows="3"
+            name="explanation"
+            required></textarea>
+        </div>
+        <div class="form-group">
+          <p>What activities do you like to do in your free time? (optional)</p>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="listening-to-music" />
+            <label class="form-check-label">Listening to music</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="reading-books" />
+            <label class="form-check-label">Reading books</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="cooking" />
+            <label class="form-check-label">Cooking</label>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button
+            id="reset"
+            type="reset">
+            Reset form
+          </button>
+          <button
+            id="submit"
+            type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

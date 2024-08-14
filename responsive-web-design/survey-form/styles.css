@@ -1,0 +1,148 @@
+:root {
+  font-family: sans-serif;
+  font-size: 16px;
+  --input-border-color: #000;
+  --primary-color: #004b88;
+}
+
+body {
+  margin: 0;
+}
+
+body::before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(115deg, #de364199, #61dcfb99, #42b88399),
+    url("https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: block;
+  margin: 5em auto;
+  padding: 2rem;
+  width: 80vw;
+  min-width: 575px;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px #00000044;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+#title {
+  margin: 0;
+}
+
+.form-group {
+  margin-top: 0.75rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--input-border-color);
+  min-height: 2rem;
+  font-size: 1rem;
+}
+
+.form-control:active,
+.form-control:focus {
+  border-bottom-width: 2px;
+  outline: none;
+}
+
+select {
+  appearance: unset;
+  border-radius: 0;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.select {
+  position: relative;
+  cursor: pointer;
+}
+
+.select::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f078";
+  font-size: 0.75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+}
+
+textarea {
+  font-family: sans-serif;
+}
+
+.form-check,
+.form-check > * {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.form-check-input {
+  margin: 0;
+  accent-color: var(--primary-color);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.btn-group {
+  margin-top: 1rem;
+  text-align: right;
+  gap: 0.5rem;
+}
+
+button[type="reset"],
+button[type="submit"] {
+  text-transform: uppercase;
+  border-width: 1px;
+  border-style: solid;
+  min-width: 120px;
+  min-height: 40px;
+  border-color: var(--primary-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button[type="reset"] {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+button[type="submit"] {
+  margin-left: 0.25rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button:hover,
+button:focus,
+button:focus-visible,
+button:active {
+  text-decoration: underline;
+  outline: none;
+}
